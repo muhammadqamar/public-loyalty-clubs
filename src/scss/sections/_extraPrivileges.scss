@@ -1,0 +1,142 @@
+.extra_privileges_section {
+  max-width: 1174px;
+  margin: 62px auto 0;
+  position: relative;
+  padding: 53px 0 0 172px;
+
+  .extra_img {
+    width: 279px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .extra_box {
+    padding: 56px 40px 40px 159px;
+    background: #d1460d;
+    border-radius: 10px;
+
+    .extra_heading {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      margin: 0 0 25px;
+    }
+
+    .extra_card_box {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 29px;
+
+      .extra_card {
+        max-width: 240px;
+        .percentage_number {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 10px;
+          min-width: 171px;
+          margin: 0 auto;
+
+          .percentage {
+            font-weight: 800;
+            font-size: 76px;
+            line-height: 104px;
+            text-align: center;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            margin: 0;
+          }
+
+          .percentage_label {
+            font-weight: 300;
+            font-size: 40px;
+            line-height: 90px;
+            letter-spacing: -0.01em;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+
+        .percentage_text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: center;
+          letter-spacing: 0.01em;
+          color: #ffffff;
+          opacity: 0.8;
+
+          > span {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .list {
+      margin-bottom: 71px;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: 768px) {
+          margin-top: 24px;
+          padding-right: 16px;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 36px;
+
+          + li {
+            margin-top: 32px;
+          }
+
+          > p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            opacity: 0.8;
+
+            > span {
+              text-decoration: underline;
+            }
+          }
+
+          > img {
+            flex: 0 0 1.5rem;
+            width: auto;
+            height: auto;
+            transform: translateY(0.1em);
+          }
+        }
+      }
+    }
+
+    .extra_btn {
+      padding: 18px 64px;
+      gap: 10px;
+      width: 267px;
+      background: #ffffff;
+      border-radius: 10px;
+      border: none;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      color: #000000;
+      margin-left: auto;
+      display: flex;
+    }
+  }
+}

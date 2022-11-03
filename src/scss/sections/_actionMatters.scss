@@ -1,0 +1,34 @@
+.action__matters {
+  max-width: 1160px;
+  margin: 38px auto 95px;
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  background: #d1460d;
+  border-radius: 10px;
+  padding: 44px 96px 52px 0;
+
+  .love_img {
+    width: 594px;
+    height: auto;
+    margin-left: -53px;
+  }
+
+  .action_matter_content {
+    .action_heading {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 46px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+      margin-bottom: 14px;
+    }
+
+    .action_text {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 36px;
+      color: #ffffff;
+    }
+  }
+}
