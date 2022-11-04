@@ -1,86 +1,135 @@
-.register_main_section {
-  max-width: 1440px;
+.main_member_register {
+  width: 100%;
+  background-color: #e84e0f;
+  .register_main_section {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    padding: 95px 0 111px;
 
-  display: flex;
-  align-items: center;
-  gap: 43px;
-
-  padding: 0 0 111px;
-
-  .register_img {
-    width: 457.58px;
-    height: auto;
-  }
-
-  .register_content {
-    .register_heading {
-      font-weight: 700;
-      font-size: 56px;
-      line-height: 56px;
-      letter-spacing: -0.01em;
-      color: #ffffff;
-      margin: 0 0 40px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 26px;
+      padding: 40px 0 70px;
     }
 
-    .reg_member_names {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      margin-bottom: 86px;
+    .register_img {
+      width: 457.58px;
+      height: auto;
 
-      .regis_name {
-        display: flex;
-        align-items: center;
-        gap: 20px;
+      @media (max-width: 992px) {
+        margin: 0 auto 0 0;
+      }
+    }
 
-        border-top: 1px solid #f4a687;
-        border-bottom: 1px solid #f4a687;
-        padding: 17px 32px 23px;
+    .register_content {
+      @media (min-width: 992px) and (max-width: 1200px) {
+        padding-right: 20px;
+      }
 
-        .name {
-          font-weight: 800;
-          font-size: 24px;
-          line-height: 28px;
-          letter-spacing: 0.01em;
-          color: #ffffff;
-          margin: 0;
+      @media (max-width: 992px) {
+        padding: 0 24px;
+        width: 100%;
+      }
+
+      .register_heading {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+        color: #ffffff;
+        margin: 0 0 40px;
+
+        @media (max-width: 768px) {
+          margin: 0 0 37px;
         }
       }
 
-      .and_regis {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-        letter-spacing: 0.01em;
-        color: #ffffff;
-        opacity: 0.7;
-      }
+      .reg_member_names {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 86px;
 
-      .regis_name_2 {
-        border-top: 1px solid #f4a687;
-        border-bottom: 1px solid #f4a687;
-        padding: 17px 5px 23px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          width: 100%;
+          gap: 0;
+          margin-bottom: 41px;
+        }
 
-        .name {
-          font-weight: 600;
+        .regis_name {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          border-top: 1px solid #f4a687;
+          border-bottom: 1px solid #f4a687;
+          padding: 17px 32px 23px;
+
+          @media (max-width: 768px) {
+            justify-content: center;
+            width: 100%;
+          }
+
+          .name {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            margin: 0;
+          }
+        }
+
+        .and_regis {
+          font-weight: 400;
           font-size: 24px;
           line-height: 28px;
           letter-spacing: 0.01em;
           color: #ffffff;
           opacity: 0.7;
-          margin: 0;
+
+          @media (max-width: 768px) {
+            margin: 14px 0 22px;
+          }
+        }
+
+        .regis_name_2 {
+          border-top: 1px solid #f4a687;
+          border-bottom: 1px solid #f4a687;
+          padding: 17px 5px 23px;
+
+          @media (max-width: 768px) {
+            text-align: center;
+            width: 100%;
+          }
+
+          .name {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.01em;
+            color: #ffffff;
+            opacity: 0.7;
+            margin: 0;
+            @media (max-width: 768px) {
+              font-size: 20px;
+              line-height: 28px;
+            }
+          }
         }
       }
-    }
 
-    .register_mail {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 28px;
-      letter-spacing: 0.01em;
-      color: #ffffff;
-      > span {
-        text-decoration: underline;
+      .register_mail {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        > span {
+          text-decoration: underline;
+        }
       }
     }
   }

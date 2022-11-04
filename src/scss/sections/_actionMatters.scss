@@ -1,6 +1,6 @@
 .action__matters {
   max-width: 1160px;
-  margin: 38px auto 95px;
+  margin: 38px auto 0;
   display: flex;
   align-items: center;
   gap: 46px;
@@ -8,10 +8,23 @@
   border-radius: 10px;
   padding: 44px 96px 52px 0;
 
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+    padding: 24px 24px 36px;
+    gap: 36px;
+    margin: 22px auto 0;
+  }
+
   .love_img {
     width: 594px;
     height: auto;
     margin-left: -53px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      height: auto;
+      margin-left: -63px;
+    }
   }
 
   .action_matter_content {
@@ -22,6 +35,12 @@
       letter-spacing: 0.01em;
       color: #ffffff;
       margin-bottom: 14px;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 46px;
+        margin-bottom: 8px;
+      }
     }
 
     .action_text {
@@ -29,6 +48,11 @@
       font-size: 20px;
       line-height: 36px;
       color: #ffffff;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 30px;
+      }
     }
   }
 }
