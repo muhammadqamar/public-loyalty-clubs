@@ -4,9 +4,10 @@
   .register_main_section {
     max-width: 1440px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 43px;
     padding: 95px 0 111px;
+    margin: 0 auto;
 
     @media (max-width: 992px) {
       flex-direction: column;
